@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android" parallel="false" thread-count="1">
+	
+	<!-- <parameter name="userType" value="${UserType}"/>  Seriti/Op's poratal
+	<parameter name="runMode" value="${runMode}"/>	
+	<parameter name="runModule" value="${runModule}"/>
+	<parameter name="browserType" value="${browserType}"/>
+	<parameter name="url" value="${url}" /> -->
+	
+	<!--<parameter name="url" value="marquis_UAT" />
+	<parameter name="browserType" value="Chrome"/>   
+	<parameter name="userType" value="Seriti"/>  
+	<parameter name="runModule" value="Suite"/>
+	<parameter name="runMode" value="Suites"/>	
+	<parameter name="url" value="" />-->
+	
+
+	<listeners>
+		<!-- <listener class-name="com.parameters.ParameterInjector" />-->
+		<listener class-name="com.utility.ExtentReporter" />
+		<!-- <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
+		<!-- <listener class-name="com.utility.MyTranformer"/> -->
+	</listeners>
+	
+	<!-- <test name="MLWallet" parallel="methods" thread-count="2"> -->
+	 <test name="MLWallet"> 
+	     <parameter name="portno" value="4723"></parameter>
+         <parameter name="deviceName" value="4TWOGQCM6589MBZD"></parameter>
+   		<classes>
+<!--			RZ8T20EDQ5W-->
+<!--			4TWOGQCM6589MBZD-->
+<!--    		<class name="com.mlwallet.regression.MLWalletRegressionScripts" />-->
+
+			<class name="com.mlwallet.regression.MLWalletLoginScripts" />
+			<class name="com.mlwallet.regression.MLWalletCashInViaBankScripts" />
+			<class name="com.mlwallet.regression.MLWalletCashInViaBranch" />
+			<class name="com.mlwallet.regression.MLWalletCashOutWithdrawScripts" />
+			<class name="com.mlwallet.regression.MLWalletSendTransferToAnyMLBranchScripts" />
+			<class name="com.mlwallet.regression.MLWalletSendTransferToMLWalletUserScripts" />
+			<class name="com.mlwallet.regression.MLWalletRegressionPayBillsScripts" />
+			<class name="com.mlwallet.regression.MLWalletSettingScripts" />
+			<class name="com.mlwallet.regression.MLWalletShopItemScripts" />
+			<class name="com.mlwallet.regression.MLWalletTransactionHistory" />
+			<class name="com.mlwallet.regression.MLWalletBuyEload" />
+<!--&lt;!&ndash;			&ndash;&gt;-->
+				<!--<methods>
+                      <include name="mlWalletLoginScenario"></include>
+                </methods>-->
+
+   		</classes>
+	</test>
+
+<!--	<test name="MLWallet1">-->
+<!--	<parameter name="portno" value="4729"></parameter>-->
+<!--         <parameter name="deviceName" value="RZ8T20EDQ5W"></parameter>-->
+<!--   		 <classes>-->
+<!--    		<class name="com.mlwallet.regression.MLWalletRegressionScripts2" >-->
+<!--&lt;!&ndash;				 <methods>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="mlWalletLoginScenario1"></include>&ndash;&gt;-->
+<!--&lt;!&ndash;                 </methods>&ndash;&gt;-->
+<!--                </class>-->
+<!--              </classes>-->
+<!--      </test>-->
+
+  </suite>
