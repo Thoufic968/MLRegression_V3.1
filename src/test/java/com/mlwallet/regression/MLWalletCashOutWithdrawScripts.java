@@ -24,52 +24,52 @@ public class MLWalletCashOutWithdrawScripts {
 //============================================================================================================//
 
 
-//    @Test(priority = 1)
-//    public void cashOutWithdrawBank_WM_TC_01() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutWithdrawBank_WM_TC_01("100");
-//    }
-//
-//    @Test(priority = 2)
-//    public void cashOutWithInvalidAccNumber_WM_TC_02() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutWithInvalidAccNumber_WM_TC_02();
-//    }
-//
-//    @Test(priority = 3)
-//    public void cashOutWithdrawBankMaxAmount_WM_TC_03() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutWithdrawBankMaxAmount_WM_TC_03("60000");
-//    }
-//
-//    @Test(priority = 4)
-//    public void cashOutWithdrawMinTransactionLimit_WM_TC_04() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutWithdrawMinTransactionLimit_WM_TC_04("10");
-//    }
-//
-//    @Test(priority = 5)
-//    public void cashOutWithdrawBranch_WM_TC_05() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutWithdrawBranch_WM_TC_05();
-//    }
-//
-//    @Test(priority = 6)
-//    public void cashOutMaxLimit_WM_TC_06() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutMaxLimit_WM_TC_06();
-//    }
-//
-//    @Test(priority = 7)
-//    public void cashOutInsufficientBalance_WM_TC_07() throws Exception {
-//        MLWalletBusinessLogic.cashOutInsufficientBalance_WM_TC_07();
-//    }
-//
-//    @Test(priority = 8)
-//    public void cashOutBuyerTierLevelAcc_WM_TC_08() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashOutBuyerTierLevelAcc_WM_TC_08();
-//    }
+    @Test(priority = 1)
+    public void cashOutWithdrawBank_WM_TC_01() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutWithdrawBank_WM_TC_01("100");
+    }
+
+    @Test(priority = 2)
+    public void cashOutWithInvalidAccNumber_WM_TC_02() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutWithInvalidAccNumber_WM_TC_02();
+    }
+
+    @Test(priority = 3)
+    public void cashOutWithdrawBankMaxAmount_WM_TC_03() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutWithdrawBankMaxAmount_WM_TC_03("60000");
+    }
+
+    @Test(priority = 4)
+    public void cashOutWithdrawMinTransactionLimit_WM_TC_04() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutWithdrawMinTransactionLimit_WM_TC_04("10");
+    }
+
+    @Test(priority = 5)
+    public void cashOutWithdrawBranch_WM_TC_05() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutWithdrawBranch_WM_TC_05();
+    }
+
+    @Test(priority = 6)
+    public void cashOutMaxLimit_WM_TC_06() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutMaxLimit_WM_TC_06();
+    }
+
+    @Test(priority = 7)
+    public void cashOutInsufficientBalance_WM_TC_07() throws Exception {
+        MLWalletBusinessLogic.cashOutInsufficientBalance_WM_TC_07();
+    }
+
+    @Test(priority = 8)
+    public void cashOutBuyerTierLevelAcc_WM_TC_08() throws Exception
+    {
+        MLWalletBusinessLogic.cashOutBuyerTierLevelAcc_WM_TC_08();
+    }
 
 //=========================== Phase 2=================================================================//
 

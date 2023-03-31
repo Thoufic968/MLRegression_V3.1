@@ -236,7 +236,7 @@ public class MLWalletRegressionScripts {
 
 	@Test(priority = 34)
 	public void cashInViaBankMaximumTransaction() throws Exception {
-		MLWalletBusinessLogic.cashInViaBankMaximumTransaction();
+		MLWalletBusinessLogic.cashInViaBankMaximumTransaction_CIBA_TC_04();
 	}
 //===============================================================================================================//
 	@Test(priority = 35)

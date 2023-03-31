@@ -36,6 +36,7 @@ public class MLWalletLoginPage {
 	public static By objBranchLocator = By.xpath("//*[@text='Branch Locator']");
 
 	public static By objAppVersion = By.xpath("//*[@resource-id='346187']");
+	public static By objAppVersionChangeNumber = By.xpath("//*[@resource-id='216094']");
 
 	public static By objHaveAnAccountMsg = By.xpath("//*[@text='Don’t have an account?']");
 

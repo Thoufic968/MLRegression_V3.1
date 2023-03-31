@@ -43,7 +43,10 @@
 			<class name="com.mlwallet.regression.MLWalletShopItemScripts" />
 			<class name="com.mlwallet.regression.MLWalletTransactionHistory" />
 			<class name="com.mlwallet.regression.MLWalletBuyEload" />
-<!--&lt;!&ndash;			&ndash;&gt;-->
+			<class name="com.mlwallet.regression.MLWalletLogoutScripts"/>
+			<class name="com.mlwallet.regression.MLWalletBranchLocator"/>
+
+<!--&lt;!&ndash;&lt;!&ndash;			&ndash;&gt;&ndash;&gt;-->
 				<!--<methods>
                       <include name="mlWalletLoginScenario"></include>
                 </methods>-->

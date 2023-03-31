@@ -24,56 +24,56 @@ public class MLWalletSendTransferToMLWalletUserScripts {
 
 //===========================================================================================================//
 
-//    @Test(priority = 1)
-//    public void sendToMLWalletUser() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendToMLWalletUser_STW_TC_01();
-//    }
-//
-//
-//    @Test(priority = 2)
-//    public void sendMoneyAddToFavorites_STW_TC_12() throws Exception {
-//        MLWalletBusinessLogic.sendMoneyAddToFavorites_STW_TC_12();
-//    }
-//
-//    @Test(priority = 3)
-//    public void sendMoneyMLWalletToExistingReceiver() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendMoneyMLWalletToExistingReceiver_STW_TC_02();
-//
-//    }
-//
-//    @Test(priority = 4)
-//    public void sendToMLWalletInvalidMobNumber() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendToMLWalletInvalidMobNumber_STW_TC_03();
-//    }
-//
-//
-//    @Test(priority = 5)
-//    public void sendToMLWalletUnRegisteredNumber() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendToMLWalletUnRegisteredNumber_STW_TC_04();
-//    }
-//
-//    @Test(priority = 6)
-//    public void sendToMLWalletInvalidAmount() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendToMLWalletInvalidAmount_STW_TC_05("0");
-//    }
-//
-//    @Test(priority = 7)
-//    public void sendToMLWalletInsufficientAmount() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendToMLWalletInsufficientAmount_STW_TC_06();
-//    }
-//
-//    @Test(priority = 8)
-//    public void sendMoneyMLWalletMaximumAmount() throws Exception
-//    {
-//        MLWalletBusinessLogic.sendMoneyMLWalletMaximumAmount_STW_TC_07();
-//    }
-//
+    @Test(priority = 1)
+    public void sendToMLWalletUser() throws Exception
+    {
+        MLWalletBusinessLogic.sendToMLWalletUser_STW_TC_01();
+    }
+
+
+    @Test(priority = 2)
+    public void sendMoneyAddToFavorites_STW_TC_12() throws Exception {
+        MLWalletBusinessLogic.sendMoneyAddToFavorites_STW_TC_12();
+    }
+
+    @Test(priority = 3)
+    public void sendMoneyMLWalletToExistingReceiver() throws Exception
+    {
+        MLWalletBusinessLogic.sendMoneyMLWalletToExistingReceiver_STW_TC_02();
+
+    }
+
+    @Test(priority = 4)
+    public void sendToMLWalletInvalidMobNumber() throws Exception
+    {
+        MLWalletBusinessLogic.sendToMLWalletInvalidMobNumber_STW_TC_03();
+    }
+
+
+    @Test(priority = 5)
+    public void sendToMLWalletUnRegisteredNumber() throws Exception
+    {
+        MLWalletBusinessLogic.sendToMLWalletUnRegisteredNumber_STW_TC_04();
+    }
+
+    @Test(priority = 6)
+    public void sendToMLWalletInvalidAmount() throws Exception
+    {
+        MLWalletBusinessLogic.sendToMLWalletInvalidAmount_STW_TC_05("0");
+    }
+
+    @Test(priority = 7)
+    public void sendToMLWalletInsufficientAmount() throws Exception
+    {
+        MLWalletBusinessLogic.sendToMLWalletInsufficientAmount_STW_TC_06();
+    }
+
+    @Test(priority = 8)
+    public void sendMoneyMLWalletMaximumAmount() throws Exception
+    {
+        MLWalletBusinessLogic.sendMoneyMLWalletMaximumAmount_STW_TC_07();
+    }
+
 
 //================================================================================================//
 

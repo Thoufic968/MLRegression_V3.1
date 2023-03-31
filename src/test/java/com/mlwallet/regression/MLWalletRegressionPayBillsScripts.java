@@ -99,4 +99,28 @@ public class MLWalletRegressionPayBillsScripts {
     public void deleteAddedBillerPayBills() throws Exception {
         MLWalletBusinessLogic.deleteAddedBillerPayBills_PB_TC_15();
     }
+
+//============================================================================================================//
+
+
+    @Test(priority = 15)
+    public void payBillsUIValidation_PB_TC_16() throws Exception {
+        MLWalletBusinessLogic.payBillsUIValidation_PB_TC_16();
+    }
+
+    @Test(priority = 16)
+    public void payBillsAddBillerPageUIValidation_PB_TC_18() throws Exception {
+        MLWalletBusinessLogic.payBillsAddBillerPageUIValidation_PB_TC_18();
+    }
+
+
+
+
+
+
+
+
+
+
+
 }

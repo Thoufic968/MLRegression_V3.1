@@ -25,29 +25,29 @@ public class MLWalletCashInViaBranch {
 
     //******************* Cash In Via Branch ====================================/
 
-//    @Test(priority = 1)
-//    public void cashInviaBranch_ValidAmount_Scenario_CIBR_TC_01() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashInviaBranch_ValidAmount_Scenario_CIBR_TC_01();
-//    }
-//
-//    @Test(priority = 2)
-//    public void cashInViaBranchCancelTransactionScenario_CIBR_TC_02() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashInViaBranchCancelTransactionScenario_CIBR_TC_02();
-//    }
-//
-//    @Test(priority = 3)
-//    public void cashInviaBranch_Invalid_Amount_CIBR_TC_03() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashInviaBranch_Invalid_Amount_CIBR_TC_03();
-//    }
-//
-//    @Test(priority = 4)
-//    public void cashInViaBranch_Maximum_Limit_Amount_CIBR_TC_04() throws Exception
-//    {
-//        MLWalletBusinessLogic.cashInViaBranch_Maximum_Limit_Amount_CIBR_TC_04();
-//    }
+    @Test(priority = 1)
+    public void cashInviaBranch_ValidAmount_Scenario_CIBR_TC_01() throws Exception
+    {
+        MLWalletBusinessLogic.cashInviaBranch_ValidAmount_Scenario_CIBR_TC_01();
+    }
+
+    @Test(priority = 2)
+    public void cashInViaBranchCancelTransactionScenario_CIBR_TC_02() throws Exception
+    {
+        MLWalletBusinessLogic.cashInViaBranchCancelTransactionScenario_CIBR_TC_02();
+    }
+
+    @Test(priority = 3)
+    public void cashInviaBranch_Invalid_Amount_CIBR_TC_03() throws Exception
+    {
+        MLWalletBusinessLogic.cashInviaBranch_Invalid_Amount_CIBR_TC_03();
+    }
+
+    @Test(priority = 4)
+    public void cashInViaBranch_Maximum_Limit_Amount_CIBR_TC_04() throws Exception
+    {
+        MLWalletBusinessLogic.cashInViaBranch_Maximum_Limit_Amount_CIBR_TC_04();
+    }
 
 
 //============================================================================================================//
