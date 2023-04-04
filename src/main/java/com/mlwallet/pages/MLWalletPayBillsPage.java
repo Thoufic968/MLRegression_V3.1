@@ -56,6 +56,7 @@ public class MLWalletPayBillsPage {
     public static By objAccountNumber = By.xpath("(//*[@resource-id='Account Number'])[2]");
     public static By objPaymentMethod = By.xpath("(//*[@resource-id='Payment Method'])[2]");
     public static By objPayBtn = By.xpath("//*[contains(@text,'Pay P')]");
+    public static By objMaxLimitErrorMessage = By.xpath("(//*[@resource-id='modal-confirm-button']/preceding-sibling::android.widget.TextView)[2]");
     public static By objAddBiller = By.xpath("//*[@text='Add Biller']");
     public static By objAddBillers = By.xpath("//*[@text='Add Billers']");
     public static By objAddSeectedBiller = By.xpath("//*[@text='Biller']/preceding-sibling::android.view.ViewGroup");
@@ -94,6 +95,9 @@ public class MLWalletPayBillsPage {
     }
     public static By objRemoveBtn = By.xpath("//*[@text='Remove']");
     public static By objConfirmPopup = By.xpath("//*[@text='Are you sure to remove this record?']");
-
+    public static By objNewTransactionBtn = By.xpath("//*[@text='New Transaction']");
+    public static By objRecentTransactionOne = By.xpath("//*[@class='android.view.ViewGroup' and ./*[@text] and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.HorizontalScrollView']]]]]");
+    public static By objAccountInfo = By.xpath("//*[@text='Account Info']");
+    public static By objUpgradeNowBtn = By.xpath("//*[@text='Upgrade Now']");
 
 }

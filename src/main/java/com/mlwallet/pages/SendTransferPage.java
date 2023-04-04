@@ -85,25 +85,16 @@ public class SendTransferPage {
     public static By objContactAlreadyExistMsg = By.xpath("//*[@text='Contact already exists.']");
 
     public static By objOkBtn = By.xpath("//*[@text='Ok']");
-
     public static By objEditRecipientLastName = By.xpath("(//*[@text='Middle Name']/following-sibling::android.widget.EditText)[1]");
 
     public static By objFirstNameRequiredMsg = By.xpath("//*[@text='First name is required']");
-
     public static By objMiddleNameRequiredMsg = By.xpath("//*[@text='Middle name is required']");
-
     public static By objLastNameRequiredMsg = By.xpath("//*[@text='Last name is required']");
-
     public static By objMobileNumberRequiredMsg = By.xpath("//*[@text='Mobile number is required']");
-
     public static By objFirstNameErrorMsg = By.xpath("//*[@text='First name must only contain letters and spaces']");
-
     public static By objMiddleNameErrorMsg = By.xpath("//*[@text='Middle name must only contain letters and spaces']");
-
     public static By objLastNameErrorMsg = By.xpath("//*[@text='Last name must only contain letters and spaces']");
-
     public static By objMobileNumberErrorMsg = By.xpath("//*[@text='Mobile number is invalid']");
-
     public static By objReferenceNumberInTransaction = By.xpath("//*[contains(@text,'KPTN')]");
 
     public static By objInvalidAmountMsg = By.xpath("//*[@text='PHP']/parent::android.view.ViewGroup/following-sibling::android.widget.TextView");

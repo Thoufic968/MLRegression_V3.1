@@ -7,6 +7,7 @@ public class MLWalletHomePage {
     public static By objRecentTransactions = By.xpath("(//*[@text='Recent Transactions'])");
 
     public static By objCashOutButton = By.xpath("(//*[@text='Cash Out'])[1]");
+    public static By objPendingStatusForCashOut = By.xpath("((//*[@text='Cash Out'])[1]/preceding-sibling::android.view.ViewGroup/child::android.widget.TextView)[2]");
 
     public static By objKwartaPadala = By.xpath("(//*[@text='Kwarta Padala'])[1]");
 

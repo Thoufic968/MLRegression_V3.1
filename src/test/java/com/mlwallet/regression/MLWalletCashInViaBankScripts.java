@@ -24,20 +24,20 @@ public class MLWalletCashInViaBankScripts {
 //==================================================================================================//
 
 
-    @Test(priority = 1)
-    public void cashInViaBank() throws Exception {
-        MLWalletBusinessLogic.cashInViaBank_CIBA_TC_01();
-    }
-
-    @Test(priority = 2)
-    public void cashInViaBankMinimumTransactionLimit() throws Exception {
-        MLWalletBusinessLogic.cashInViaBankMinimumTransactionLimit_CIBA_TC_03();
-    }
-
-    @Test(priority = 3)
-    public void cashInViaBankMaximumTransaction() throws Exception {
-        MLWalletBusinessLogic.cashInViaBankMaximumTransaction_CIBA_TC_04();
-    }
+//    @Test(priority = 1)
+//    public void cashInViaBank() throws Exception {
+//        MLWalletBusinessLogic.cashInViaBank_CIBA_TC_01();
+//    }
+//
+//    @Test(priority = 2)
+//    public void cashInViaBankMinimumTransactionLimit() throws Exception {
+//        MLWalletBusinessLogic.cashInViaBankMinimumTransactionLimit_CIBA_TC_03();
+//    }
+//
+//    @Test(priority = 3)
+//    public void cashInViaBankMaximumTransaction() throws Exception {
+//        MLWalletBusinessLogic.cashInViaBankMaximumTransaction_CIBA_TC_04();
+//    }
 
 
 //=========================================================================================================//

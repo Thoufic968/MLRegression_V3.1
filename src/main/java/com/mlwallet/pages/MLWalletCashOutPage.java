@@ -114,7 +114,7 @@ public class MLWalletCashOutPage {
     public static By objCashOutOptions = By.xpath("//*[@text='Cash out options']");
 
     public static By objCashOutOngoingTransaction = By.xpath("//*[@text='Ongoing Transactions']");
-
+    public static By objReferenceNumberCashOutBranch = By.xpath("(//*[@text='Reference Number']/following-sibling::android.widget.TextView)[1]");
     public static By objCashOutPage = By.xpath("//*[@text='Cash Out']");
 
     public static By ObjCashOutToBranch = By.xpath("//*[@text='Cash Out To Branch']");
@@ -135,4 +135,13 @@ public class MLWalletCashOutPage {
     public static By objOneTimePinBackBtn = By.xpath("//*[@text='One Time Pin']/parent::android.view.ViewGroup/preceding-sibling::android.view.ViewGroup");
 
     public static By objReviewTransaction = By.xpath("//*[@text='Review Transaction']");
+    public static By objNewTransaction = By.xpath("//*[@text='New Transaction']");
+    public static By objPHP = By.xpath("//*[contains(@text,'PHP')]");
+    public static By objCancelIcon = By.xpath("//*[@text='Cash Out']/parent::android.view.ViewGroup/preceding-sibling::android.view.ViewGroup");
+    public static By objUpgradeNowBtn = By.xpath("//*[@text='Upgrade Now']");
+    public static By objAccountNumberRequiredMsg = By.xpath("//*[@text='Account Number is required']");
+    public static By objFirstNameRequiredMsg = By.xpath("//*[@text='First name is required']");
+    public static By objMiddleNameRequiredMsg = By.xpath("//*[@text='Middle name is required']");
+    public static By objLastNameRequiredMsg = By.xpath("//*[@text='Last name is required']");
+    public static By objMobileNumberRequiredMsg = By.xpath("//*[@text='Mobile number is required']");
 }
