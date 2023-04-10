@@ -102,6 +102,8 @@ public class SendTransferPage {
     public static By objInsufficientAmountMsg = By.xpath("(//*[@resource-id='modal-confirm-button']/preceding-sibling::android.widget.TextView)[2]");
 
     public static By objMaxLimitErrorMsg = By.xpath("(//*[@resource-id='modal-confirm-button']/preceding-sibling::android.widget.TextView)[2]");
+    public static By objErrorMsg = By.xpath("(//*[@resource-id='modal-confirm-button']/preceding-sibling::android.widget.TextView)[2]");
+    public static By objUpgradeNowBtn = By.xpath("//*[@text='Upgrade Now']");
 
 //======================================== Send to Wallet User ===================================//
 
@@ -170,6 +172,7 @@ public class SendTransferPage {
     public static By objCancelTransaction = By.xpath("//*[@text='Cancel Transaction']");
 
     public static By objAddedFavorite = By.xpath("//*[@text='Singh, Sharath Nm']");
-
+    public static By objKwartaPadalaRatesBtn = By.xpath("//*[@text='Kwarta Padala Rates']");
+    public static By objKwartaPadalaRates = By.xpath("//*[@class='android.widget.ScrollView']/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.widget.TextView");
 
 }

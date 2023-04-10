@@ -59,9 +59,12 @@ public class MLWalletCashOutPage {
     public static By objEmailAddress = By.xpath("(//*[@text='BogusBank']/following-sibling::android.widget.EditText)[5]");
 
     public static By objCheckBox = By.xpath("//*[@class='android.widget.ImageView']");
-
+    public static By objViewAllBtn = By.xpath("//*[@text='View All']");
+    public static By objViewAllBackBtn = By.xpath("(//*[@text and ./parent::*[@class='android.view.ViewGroup' and (./preceding-sibling::* | ./following-sibling::*)[@class='android.view.ViewGroup']]])[2]");
     public static By objConfirmBtn = By.xpath("//*[@text='Confirm']");
-
+    public static By objDragonPage = By.xpath("//*[@text='Dragon Pay']");
+    public static By objBankCashOut = By.xpath("//*[@text='Bank Cash Out']");
+    public static By objBank = By.xpath("(//*[@text='Bank Information']/following-sibling::android.widget.TextView)[2]");
     public static By objTransactionNo = By.xpath("//*[@text='Transaction No.']/following-sibling::android.widget.TextView");
 
     public static By objTransactionReferenceNo = By.xpath("");
@@ -101,7 +104,7 @@ public class MLWalletCashOutPage {
 
     public static By objSaveRecipientBtn = By.xpath("//*[@text='Save Recipient']");
 
-    public static By objSavedBackAccount = By.xpath("//*[@text='Saved Bank Accounts']");
+    public static By objSavedBankAccount = By.xpath("//*[@text='Saved Bank Accounts']");
 
     public static By objNickNameInSavedBankAcc(String sNickName){
         return By.xpath("//*[@text='"+sNickName+"']");
@@ -135,6 +138,13 @@ public class MLWalletCashOutPage {
     public static By objOneTimePinBackBtn = By.xpath("//*[@text='One Time Pin']/parent::android.view.ViewGroup/preceding-sibling::android.view.ViewGroup");
 
     public static By objReviewTransaction = By.xpath("//*[@text='Review Transaction']");
+    public static By objReceiverName = By.xpath("//*[@resource-id='fullName']");
+    public static By objBankName = By.xpath("//*[@resource-id='bankName']");
+    public static By objAccountNumber = By.xpath("//*[@resource-id='accountNumber']");
+    public static By objAmount = By.xpath("//*[@resource-id='amount']");
+    public static By objServiceFee = By.xpath("//*[@resource-id='serviceFee']");
+    public static By objTotalAmountDeduct = By.xpath("//*[@resource-id='netAmount']");
+    public static By objEmailAddressUpdated = By.xpath("//*[@resource-id='email']");
     public static By objNewTransaction = By.xpath("//*[@text='New Transaction']");
     public static By objPHP = By.xpath("//*[contains(@text,'PHP')]");
     public static By objCancelIcon = By.xpath("//*[@text='Cash Out']/parent::android.view.ViewGroup/preceding-sibling::android.view.ViewGroup");
@@ -143,5 +153,27 @@ public class MLWalletCashOutPage {
     public static By objFirstNameRequiredMsg = By.xpath("//*[@text='First name is required']");
     public static By objMiddleNameRequiredMsg = By.xpath("//*[@text='Middle name is required']");
     public static By objLastNameRequiredMsg = By.xpath("//*[@text='Last name is required']");
-    public static By objMobileNumberRequiredMsg = By.xpath("//*[@text='Mobile number is required']");
+    public static By objEmailAddressRequiredMsg = By.xpath("//*[@text='Email address is required']");
+    public static By objReceiverNameInTransactionReceipt = By.xpath("(//*[@text=concat('Receiver', \"'\", 's Name')]/following-sibling::android.widget.TextView)[1]");
+    public static By objBankNamInTransactionReceipt = By.xpath("(//*[@text='Bank Name']/following-sibling::android.widget.TextView)[1]");
+    public static By objAccountNumberInTransactionReceipt = By.xpath("(//*[@text='Account Number']/following-sibling::android.widget.TextView)[1]");
+    public static By objPrincipalAmount = By.xpath("(//*[@text='Principal Amount']/following-sibling::android.widget.TextView)[1]");
+    public static By objServiceFeeInTransactionReceipt = By.xpath("(//*[@text='Service Fee']/following-sibling::android.widget.TextView)[1]");
+    public static By objNetAmount = By.xpath("(//*[@text='Net Amount']/following-sibling::android.widget.TextView)[1]");
+    public static By objEmailInTransactionReceipt = By.xpath("(//*[@text='Email']/following-sibling::android.widget.TextView)[1]");
+    public static By objDate = By.xpath("(//*[@text='Date']/following-sibling::android.widget.TextView)[1]");
+    public static By objType = By.xpath("(//*[@text='Type']/following-sibling::android.widget.TextView)[1]");
+    public static By objAddToSavedRecipients = By.xpath("//*[@text='Add to Saved Recipients']");
+
+
+
+    public static By objAccountNumberInSavedBankAccount = By.xpath("(((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView' and (./preceding-sibling::* | ./following-sibling::*)[@class='android.view.ViewGroup']]]/*/*/*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]])[1]/*/*/*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]])[1]/*[@text])[3]");
+    public static By objThreeDotMenuButton = By.xpath("((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.widget.ScrollView' and (./preceding-sibling::* | ./following-sibling::*)[@class='android.view.ViewGroup']]]/*/*/*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]])[1]/*/*/*/*[@text and ./parent::*[@class='android.view.ViewGroup']])[4]");
+    public static By objEditBtn = By.xpath("//*[@text='Edit']");
+    public static By objDeleteBtn = By.xpath("//*[@text='Delete']");
+    public static By objAccountNumber(String sAccountNumber){
+        return By.xpath("//*[@text='"+sAccountNumber+"']");
+    }
+    public static By objAccountNumberInEditRecipient = By.xpath("//*[@text='Account Number']/following-sibling::android.widget.EditText");
+    public static By objEditRecipientBackBtn = By.xpath("(//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup'] and (./preceding-sibling::* | ./following-sibling::*)[@class='android.view.ViewGroup' and ./*[@class='android.view.ViewGroup']]]]]/*/*[@class='android.widget.TextView' and ./parent::*[@class='android.view.ViewGroup']])[1]");
 }

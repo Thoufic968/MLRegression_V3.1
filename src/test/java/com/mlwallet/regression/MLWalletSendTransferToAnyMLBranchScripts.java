@@ -127,4 +127,44 @@ public class MLWalletSendTransferToAnyMLBranchScripts {
         MLWalletBusinessLogic.sendMoneyToBranchAddRecipientPageUIValidation_STB_TC_21();
     }
 
+    @Test(priority = 21)
+    public void sendMoneyToMLBranchBuyerTierAccount_STB_TC_22() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchBuyerTierAccount_STB_TC_22();
+    }
+
+    @Test(priority = 22)
+    public void sendMoneyToMLBranchSemiVerifiedTierAccount_STB_TC_23() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchSemiVerifiedTierAccount_STB_TC_23();
+    }
+
+    @Test(priority = 23)
+    public void sendMoneyToMLBranchBranchVerifiedAccount_STB_TC_24() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchBranchVerifiedAccount_STB_TC_24();
+    }
+
+    @Test(priority = 24)
+    public void sendMoneyToMLBranchFullyVerifiedAccount_STB_TC_25() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchFullyVerifiedAccount_STB_TC_25();
+    }
+
+    @Test(priority = 25)
+    public void sendMoneyToMLBranchSemiVerifiedTierAccountMaxAmount_STB_TC_26() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchSemiVerifiedTierAccountMaxAmount_STB_TC_26();
+    }
+
+    @Test(priority = 26)
+    public void sendMoneyToMLBranchBranchVerifiedTierAccountMaxAmount_STB_TC_29() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchBranchVerifiedTierAccountMaxAmount_STB_TC_29();
+    }
+
+    @Test(priority = 27)
+    public void sendMoneyToMLBranchFullyVerifiedTierAccountMaxAmount_STB_TC_32() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchFullyVerifiedTierAccountMaxAmount_STB_TC_32();
+    }
+
+    @Test(priority = 28)
+    public void kwartaPadalaRates_STB_TC_35() throws Exception {
+        MLWalletBusinessLogic.kwartaPadalaRates_STB_TC_35();
+    }
+
 }

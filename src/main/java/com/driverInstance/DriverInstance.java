@@ -100,13 +100,23 @@ public class DriverInstance extends Drivertools {
 	 * @throws Exception
 	 */
 	protected DesiredCapabilities generateAndroidCapabilities(String application,String deviceName, String portno) {
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+		capabilities.setCapability("appium-version", "1.22.3");
 		capabilities.setCapability(MobileCapabilityType.UDID, deviceName);
-		capabilities.setCapability("fullReset", false);
-		capabilities.setCapability("autoAcceptAlerts", true);
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
+		//capabilities.setCapability("autoGrantPermissions", true);
+		capabilities.setCapability("unlockType", "pin");
+		capabilities.setCapability("unlockKey", "1111");
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300 * 60);
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
+//		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+//		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+//		capabilities.setCapability(MobileCapabilityType.UDID, deviceName);
+//		capabilities.setCapability("fullReset", false);
+//		capabilities.setCapability("autoAcceptAlerts", true);
 		if (getPlatform().equals("MPWA")) {
 			capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 			return capabilities;

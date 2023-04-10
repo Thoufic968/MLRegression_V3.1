@@ -246,14 +246,19 @@ public class Utilities extends ExtentReporter {
      * @param byLocator the by locator
      * @return true, if successful
      */
-    public static boolean verifyElementNotPresent(By byLocator, int iTimeOut) {
+    public static boolean verifyElementNotPresent(By byLocator, String ValidationText,int iTimeOut) throws Exception {
         try {
             WebDriverWait wait = new WebDriverWait(DriverManager.getAppiumDriver(), iTimeOut);
             wait.until(ExpectedConditions.invisibilityOfElementLocated(byLocator));
+            logger.info(ValidationText+" is not displayed");
+            ExtentReporter.extentLoggerPass("checkElementPresent", ValidationText + " is not displayed");
             return false;
-        } catch (NoSuchElementException e) {
+        } catch (Exception e) {
+            logger.info(ValidationText + " is present");
+            ExtentReporter.extentLoggerPass("checkElementPresent", ValidationText + " is displayed");
             return true;
         }
+
     }
 
     /*
@@ -1441,7 +1446,7 @@ public class Utilities extends ExtentReporter {
 
     public static String getAttributValue(String property, By byLocator) throws Exception {
         String Value = null;
-        WebElement element = DriverManager.getDriver().findElement(byLocator);
+        WebElement element = DriverManager.getAppiumDriver().findElement(byLocator);
         Value = element.getAttribute(property);
         return Value;
     }
@@ -2788,18 +2793,32 @@ public class Utilities extends ExtentReporter {
     }
 
     public static void assertionValidation(String actual, String expected) throws Exception {
-
-            MLWalletBusinessLogic.softAssert.assertEquals(actual,expected);
-            if(actual.equals(expected))
-            {
-                logger.info(actual+" and "+expected+" are matched");
-                ExtentReporter.extentLoggerPass("Assertion",actual+" and "+expected+" are matched");
-            }else {
-                logger.info(actual+" and "+expected+" are not matched");
-                ExtentReporter.extentLoggerFail("Assertion",actual+" and "+expected+" are not matched");
-            }
-
+        MLWalletBusinessLogic.softAssert.assertEquals(actual,expected);
+        if(actual.equals(expected))
+        {
+            logger.info(actual+" and "+expected+" are matched");
+            ExtentReporter.extentLoggerPass("Assertion",actual+" and "+expected+" are matched");
+        }else {
+            logger.info(actual+" and "+expected+" are not matched");
+            ExtentReporter.extentLoggerFail("Assertion",actual+" and "+expected+" are not matched");
+        }
     }
+
+    public static void assertNotEquals(String actual, String expected) throws Exception {
+        MLWalletBusinessLogic.softAssert.assertNotEquals(actual,expected);
+        if(actual!=expected)
+        {
+            logger.info(actual+" and "+expected+" are not matched");
+            ExtentReporter.extentLoggerPass("Assertion",actual+" and "+expected+" are not matched");
+        }else {
+            logger.info(actual+" and "+expected+" are matched");
+            ExtentReporter.extentLoggerFail("Assertion",actual+" and "+expected+" are matched");
+        }
+    }
+
+
+
+
 
     public static void scrollToFirstHorizontalScrollableElement(String textToSearch) {
         DriverManager.getAppiumDriver().findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).setAsHorizontalList().scrollIntoView(new UiSelector().text(\""+textToSearch+"\"))"));
@@ -2830,6 +2849,25 @@ public class Utilities extends ExtentReporter {
         ((FindsByAndroidUIAutomator<MobileElement>) DriverManager.getAppiumDriver()).findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+text+"\"));");
         logger.info("Swiped until the element "+text+" displayed");
     }
+
+
+
+    public static void horizontalSwipeByPercentages(double startPercentage, double endPercentage, double anchorPercentage) {
+        Dimension size = DriverManager.getAppiumDriver().manage().window().getSize();
+        int anchor = (int) (size.height * anchorPercentage);
+        int startPoint = (int) (size.width * startPercentage);
+        int endPoint = (int) (size.width * endPercentage);
+
+        new TouchAction(DriverManager.getAppiumDriver())
+                .press(PointOption.point(startPoint, anchor))
+                .waitAction(new WaitOptions().withDuration(Duration.ofMillis(600)))
+                .moveTo(PointOption.point(endPoint, anchor))
+                .release().perform();
+        logger.info("Swiped Horizontally");
+    }
+
+
+
 
 
 //    public static void waitTime(int x) {
