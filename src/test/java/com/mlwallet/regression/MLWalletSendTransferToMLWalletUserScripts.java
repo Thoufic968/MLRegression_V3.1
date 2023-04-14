@@ -30,7 +30,6 @@ public class MLWalletSendTransferToMLWalletUserScripts {
         MLWalletBusinessLogic.sendToMLWalletUser_STW_TC_01();
     }
 
-
     @Test(priority = 2)
     public void sendMoneyAddToFavorites_STW_TC_12() throws Exception {
         MLWalletBusinessLogic.sendMoneyAddToFavorites_STW_TC_12();
@@ -48,7 +47,6 @@ public class MLWalletSendTransferToMLWalletUserScripts {
     {
         MLWalletBusinessLogic.sendToMLWalletInvalidMobNumber_STW_TC_03();
     }
-
 
     @Test(priority = 5)
     public void sendToMLWalletUnRegisteredNumber() throws Exception
@@ -78,7 +76,7 @@ public class MLWalletSendTransferToMLWalletUserScripts {
 //================================================================================================//
 
     @Test(priority = 9)
-    public void sendMoneyDeleteFromFavorites() throws Exception
+      public void sendMoneyDeleteFromFavorites() throws Exception
     {
         MLWalletBusinessLogic.sendMoneyDeleteFromFavorites_STW_TC_09();
     }
@@ -137,6 +135,51 @@ public class MLWalletSendTransferToMLWalletUserScripts {
     public void sendMoneyMlWalletTransactionDetailsUIValidation_STW_TC_21() throws Exception {
         MLWalletBusinessLogic.sendMoneyMlWalletTransactionDetailsUIValidation_STW_TC_21();
     }
+
+
+    @Test(priority = 21)
+    public void sendMoneyMLWalletBuyerTierAccountUser_STW_TC_22() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletBuyerTierAccountUser_STW_TC_22();
+    }
+
+    @Test(priority = 22)
+    public void sendMoneyMLWalletSemiVerifiedAccountUser_STW_TC_23() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletSemiVerifiedAccountUser_STW_TC_23();
+    }
+
+    @Test(priority = 23)
+    public void sendMoneyMLWalletBranchVerifiedAccountUser_STW_TC_24() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletBranchVerifiedAccountUser_STW_TC_24();
+    }
+
+    @Test(priority = 24)
+    public void sendMoneyMLWalletFullyVerifiedAccountUser_STW_TC_25() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletFullyVerifiedAccountUser_STW_TC_25();
+    }
+
+    @Test(priority = 25)
+    public void sendMoneyMlWalletSemiVerifiedAccountMaxLimit_STW_TC_26() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletSemiVerifiedAccountMaxLimit_STW_TC_26();
+    }
+
+    @Test(priority = 26)
+    public void sendMoneyMlWalletBranchVerifiedAccountMaxLimit_STW_TC_29() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletBranchVerifiedAccountMaxLimit_STW_TC_29();
+    }
+
+    @Test(priority = 27)
+    public void sendMoneyMLWalletFullyVerifiedAccountMaxLimit_STW_TC_32() throws Exception {
+        MLWalletBusinessLogic.sendMoneyMLWalletFullyVerifiedAccountMaxLimit_STW_TC_32();
+    }
+
+    @Test(priority = 28)
+    public void sendMoneyToMLWalletSuccessMsgValidation_STW_TC_35() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLWalletSuccessMsgValidation_STW_TC_35();
+    }
+
+
+
+
 
 
 

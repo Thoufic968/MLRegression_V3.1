@@ -167,4 +167,75 @@ public class MLWalletSendTransferToAnyMLBranchScripts {
         MLWalletBusinessLogic.kwartaPadalaRates_STB_TC_35();
     }
 
+    @Test(priority = 29)
+    public void sendMoneyToMLBranchRatesValidationScenarioOne_STB_TC_36() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioOne_STB_TC_36("10");
+    }
+
+    @Test(priority = 30)
+    public void sendMoneyToMLBranchRatesValidationScenarioTwo_STB_TC_37() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioTwo_STB_TC_37("70");
+    }
+
+    @Test(priority = 31)
+    public void sendMoneyToMLBranchRatesValidationScenarioThree_STB_TC_38() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioThree_STB_TC_38("200");
+    }
+
+    @Test(priority = 32)
+    public void sendMoneyToMLBranchRatesValidationScenarioFour_STB_TC_39() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioFour_STB_TC_39("350");
+    }
+
+    @Test(priority = 33)
+    public void sendMoneyToMLBranchRatesValidationScenarioFive_STB_TC_40() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioFive_STB_TC_40("450");
+    }
+
+    @Test(priority = 34)
+    public void sendMoneyToMLBranchRatesValidationScenarioSix_STB_TC_41() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioSix_STB_TC_41("550");
+    }
+
+
+    @Test(priority = 35)
+    public void sendMoneyToMLBranchRatesValidationScenarioSeven_STB_TC_42() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioSeven_STB_TC_42("650");
+    }
+
+    @Test(priority = 36)
+    public void sendMoneyToMLBranchRatesValidationScenarioEight_STB_TC_43() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioEight_STB_TC_43("800");
+    }
+
+    @Test(priority = 37)
+    public void sendMoneyToMLBranchRatesValidationScenarioNine_STB_TC_44() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioNine_STB_TC_44("950");
+    }
+
+    @Test(priority = 38)
+    public void sendMoneyToMLBranchRatesValidationScenarioTen_STB_TC_45() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioTen_STB_TC_45("1300");
+    }
+
+    @Test(priority = 39)
+    public void sendMoneyToMLBranchRatesValidationScenarioEleven_STB_TC_46() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioEleven_STB_TC_46("1800");
+    }
+
+    @Test(priority = 40)
+    public void sendMoneyToMLBranchRatesValidationScenarioTwelve_STB_TC_47() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioTwelve_STB_TC_47("2300");
+    }
+
+    @Test(priority = 41)
+    public void sendMoneyToMLBranchRatesValidationScenarioThirteen_STB_TC_48() throws Exception {
+        MLWalletBusinessLogic.sendMoneyToMLBranchRatesValidationScenarioThirteen_STB_TC_48("25000");
+    }
+
+
+
+
+
+
 }

@@ -174,5 +174,6 @@ public class SendTransferPage {
     public static By objAddedFavorite = By.xpath("//*[@text='Singh, Sharath Nm']");
     public static By objKwartaPadalaRatesBtn = By.xpath("//*[@text='Kwarta Padala Rates']");
     public static By objKwartaPadalaRates = By.xpath("//*[@class='android.widget.ScrollView']/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.view.ViewGroup/child::android.widget.TextView");
+    public static By objWalletToWalletStatus = By.xpath("((//*[@text='Wallet to Wallet'])[1]/preceding-sibling::android.view.ViewGroup/child::android.widget.TextView)[2]");
 
 }

@@ -70,6 +70,7 @@ public class MLWalletCashInBank {
     public static By objReviewTransactionBackBtn = By.xpath("(//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup'] and (./preceding-sibling::* | ./following-sibling::*)[@class='android.view.ViewGroup' and ./*[./*[@class='android.widget.ScrollView']]]]]]/*/*[@text and ./parent::*[@class='android.view.ViewGroup']])[1]");
     public static By objPendingStatus = By.xpath("(//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]/*[@class='android.widget.TextView'])[19]");
     public static By objPending = By.xpath("//*[@text='Pending']");
+    public static By objCancelled = By.xpath("//*[@text='Cancelled']");
     public static By objTransactionHistoryBackBtn = By.xpath("((//*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]]]]]/*/*/*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup' and ./parent::*[@class='android.view.ViewGroup']]])[1]/*/*[@text and ./parent::*[@class='android.view.ViewGroup']])[1]");
     public static By objCancelBtn = By.xpath("//*[@text='Cancel']");
     public static By objUpgradeNowBtn = By.xpath("//*[@text='Upgrade Now']");

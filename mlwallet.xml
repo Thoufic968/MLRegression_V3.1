@@ -2,29 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Android" parallel="false" thread-count="1">
 	
-	<!-- <parameter name="userType" value="${UserType}"/>  Seriti/Op's poratal
-	<parameter name="runMode" value="${runMode}"/>	
-	<parameter name="runModule" value="${runModule}"/>
-	<parameter name="browserType" value="${browserType}"/>
-	<parameter name="url" value="${url}" /> -->
-	
-	<!--<parameter name="url" value="marquis_UAT" />
-	<parameter name="browserType" value="Chrome"/>   
-	<parameter name="userType" value="Seriti"/>  
-	<parameter name="runModule" value="Suite"/>
-	<parameter name="runMode" value="Suites"/>	
-	<parameter name="url" value="" />-->
-	
 
 	<listeners>
-		<!-- <listener class-name="com.parameters.ParameterInjector" />-->
 		<listener class-name="com.utility.ExtentReporter" />
-		<!-- <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/> -->
-		<!-- <listener class-name="com.utility.MyTranformer"/> -->
 	</listeners>
 	
-	<!-- <test name="MLWallet" parallel="methods" thread-count="2"> -->
-	 <test name="MLWallet"> 
+	 <test name="MLWallet">
 	     <parameter name="portno" value="4723"></parameter>
          <parameter name="deviceName" value="4TWOGQCM6589MBZD"></parameter>
    		<classes>
@@ -45,11 +28,8 @@
 			<class name="com.mlwallet.regression.MLWalletBuyEload" />
 			<class name="com.mlwallet.regression.MLWalletLogoutScripts"/>
 			<class name="com.mlwallet.regression.MLWalletBranchLocator"/>
+			<class name="com.mlwallet.regression.MLWalletHomeAndDashboard"/>
 
-<!--&lt;!&ndash;&lt;!&ndash;			&ndash;&gt;&ndash;&gt;-->
-				<!--<methods>
-                      <include name="mlWalletLoginScenario"></include>
-                </methods>-->
 
    		</classes>
 	</test>
@@ -59,9 +39,6 @@
 <!--         <parameter name="deviceName" value="RZ8T20EDQ5W"></parameter>-->
 <!--   		 <classes>-->
 <!--    		<class name="com.mlwallet.regression.MLWalletRegressionScripts2" >-->
-<!--&lt;!&ndash;				 <methods>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <include name="mlWalletLoginScenario1"></include>&ndash;&gt;-->
-<!--&lt;!&ndash;                 </methods>&ndash;&gt;-->
 <!--                </class>-->
 <!--              </classes>-->
 <!--      </test>-->

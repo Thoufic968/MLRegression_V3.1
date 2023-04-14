@@ -110,6 +110,9 @@ public class DriverInstance extends Drivertools {
 		capabilities.setCapability("unlockType", "pin");
 		capabilities.setCapability("unlockKey", "1111");
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300 * 60);
+
+
+
 //		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
 //		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
 //		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
