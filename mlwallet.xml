@@ -29,8 +29,6 @@
 <!--			<class name="com.mlwallet.regression.MLWalletLogoutScripts"/>-->
 <!--			<class name="com.mlwallet.regression.MLWalletBranchLocator"/>-->
 			<class name="com.mlwallet.regression.MLWalletHomeAndDashboard"/>
-
-
    		</classes>
 	</test>
 
