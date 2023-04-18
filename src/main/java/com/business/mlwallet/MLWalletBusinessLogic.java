@@ -1210,6 +1210,7 @@ public class MLWalletBusinessLogic {
 		verifyElementPresentAndClick(MLWalletCashOutPage.objEditBtn,getTextVal(MLWalletCashOutPage.objEditBtn,"Button"));
 		type(MLWalletCashOutPage.objAccountNumberInEditRecipient,prop.getproperty("EditedAccountNumber"),"Account Number In Edit Recipient");
 		click(MLWalletCashOutPage.objConfirmBtn,getTextVal(MLWalletCashOutPage.objConfirmBtn,"Button"));
+		verifyElementPresentAndClick(MLWalletCashOutPage.objCheckBox,"Middle Name Check Box");
 		verifyElementPresentAndClick(MLWalletCashOutPage.BogusBank, getTextVal(MLWalletCashOutPage.BogusBank, "Bank"));
 		verifyElementPresentAndClick(MLWalletCashOutPage.objViewAllBtn,getTextVal(MLWalletCashOutPage.objViewAllBtn,"button"));
 		waitTime(3000);
@@ -5531,6 +5532,7 @@ public class MLWalletBusinessLogic {
 				logger.info("Amount : " + sAmount + " is displayed");
 				ExtentReporter.extentLogger(" ", "Amount : " + sAmount + " is displayed");
 			}
+			Swipe("UP",1);
 			verifyElementPresent(MLWalletHomePage.objSeeMore,getTextVal(MLWalletHomePage.objSeeMore,"Button"));
 			logger.info("HD_TC_01, ML Wallet Home Page UI Validated");
 			ExtentReporter.extentLoggerPass("HD_TC_01", "HD_TC_01, ML Wallet Home Page UI Validated");
@@ -5649,6 +5651,7 @@ public class MLWalletBusinessLogic {
 		mlWalletLogin(prop.getproperty("Branch_Verified_LowBalance"));
 		verifyElementPresentAndClick(MLWalletHomePage.objHamburgerMenu,"Hamburger Menu");
 		verifyElementPresentAndClick(MLWalletHomePage.objShop,getTextVal(MLWalletHomePage.objShop,"Option"));
+		waitTime(10000);
 		if(verifyElementPresent(MLWalletShopItemsPage.objMLShopPage,getTextVal(MLWalletShopItemsPage.objMLShopPage,"Page"))){
 			logger.info("HD_TC_09, After clicking on Shop from Hamburger menu of Home Page, Application Navigated directly ML Shop Page is validated");
 			ExtentReporter.extentLoggerPass("HD_TC_09", "HD_TC_09, After clicking on Shop from Hamburger menu of Home Page, Application Navigated directly to ML Shop Page is validated");
