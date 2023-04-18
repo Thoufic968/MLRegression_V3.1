@@ -46,7 +46,7 @@ public class MLWalletSettingScripts {
 //    public void settingAccRecovery_SS_TC_05() throws Exception {
 //        MLWalletBusinessLogic.settingAccRecovery_SS_TC_05();
 //    }
-
+//
 
     @Test(priority = 6)
     public void settingsPageUIValidation_SS_TC_06() throws Exception {
