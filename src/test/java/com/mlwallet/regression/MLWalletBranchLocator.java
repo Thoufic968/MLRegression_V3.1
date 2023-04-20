@@ -11,7 +11,7 @@ public class MLWalletBranchLocator {
     public static String portno;
     public  static com.business.mlwallet.MLWalletBusinessLogic MLWalletBusinessLogic;
 
-
+   //
     //@BeforeSuite(groups = { "All" })
     @Parameters({"deviceName","portno"})
     @BeforeMethod

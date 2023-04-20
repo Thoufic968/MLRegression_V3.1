@@ -9,7 +9,7 @@
 	
 	 <test name="MLWallet">
 	     <parameter name="portno" value="4723"></parameter>
-         <parameter name="deviceName" value="4TWOGQCM6589MBZD"></parameter>
+         <parameter name="deviceName" value="RZ8RA19TWCL"></parameter>
    		<classes>
 <!--			RZ8T20EDQ5W-->
 <!--			4TWOGQCM6589MBZD-->
@@ -25,7 +25,7 @@
 			<class name="com.mlwallet.regression.MLWalletSettingScripts" />
 <!--			<class name="com.mlwallet.regression.MLWalletShopItemScripts" />-->
 <!--			<class name="com.mlwallet.regression.MLWalletTransactionHistory" />-->
-<!--			<class name="com.mlwallet.regression.MLWalletBuyEload" />-->
+<!--			<class name="com.mlwallet.regression.MLWalletBuyEload" />  -->
 <!--			<class name="com.mlwallet.regression.MLWalletLogoutScripts"/>-->
 <!--			<class name="com.mlwallet.regression.MLWalletBranchLocator"/>-->
 			<class name="com.mlwallet.regression.MLWalletHomeAndDashboard"/>
@@ -42,3 +42,5 @@
 <!--      </test>-->
 
   </suite>
+
+  
