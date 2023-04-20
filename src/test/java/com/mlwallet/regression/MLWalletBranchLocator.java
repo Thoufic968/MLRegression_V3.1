@@ -20,7 +20,7 @@ public class MLWalletBranchLocator {
         MLWalletBranchLocator.portno= portno;
         MLWalletBusinessLogic = new MLWalletBusinessLogic("MLWallet",deviceName,portno);
     }
- //HI
+ //HI hi
 //==============================================================================================================//
 
     @Test(priority = 1)
