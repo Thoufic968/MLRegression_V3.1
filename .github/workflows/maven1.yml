@@ -20,14 +20,15 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Install and Run Appium Server
+      uses: moatazeldebsy/Appium-Server-GitHub-Action@V1.0.7
+
     - uses: actions/checkout@v2
     - name: Set up JDK 8
       uses: actions/setup-java@v2
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Install and Run Appium Server
-      uses: moatazeldebsy/Appium-Server-GitHub-Action@V1.0.7
-
+   
       with:
         java-version: '8'
         distribution: 'temurin'
