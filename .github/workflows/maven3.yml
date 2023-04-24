@@ -30,13 +30,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      uses: s4u/setup-maven-action@v1.7.0
-      with:
-         checkout-fetch-depth: 0
-         java-version: 8
-         java-distribution: temurin
-         maven-version: 3.8.7
-         run: mvn -B package --file pom.xml
+      run: mvn clean test --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
