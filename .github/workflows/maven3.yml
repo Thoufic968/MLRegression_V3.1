@@ -33,6 +33,7 @@ jobs:
       uses: s4u/setup-maven-action@v1.7.0
       with:
          checkout-fetch-depth: 0
+         java-version: 8
          java-distribution: temurin
          maven-version: 3.8.7
          run: mvn -B package --file pom.xml
